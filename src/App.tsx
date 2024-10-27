@@ -12,6 +12,9 @@ import {
 // Default styles that can be overridden by your app
 import '@solana/wallet-adapter-react-ui/styles.css';
 import { Airdrop } from './Airdrop';
+import { SendTokens } from './SendToken';
+import { ShowSolBalance } from './showSolBalance';
+import { SignMessage } from './Signmessage';
 
 export const App: FC = () => {
     // The network can be set to 'devnet', 'testnet', or 'mainnet-beta'.
@@ -47,6 +50,9 @@ export const App: FC = () => {
                     <WalletMultiButton />
                     <WalletDisconnectButton />
                     <Airdrop/>
+                    <SendTokens/>
+                    <ShowSolBalance/>
+                    <SignMessage/>
 
                 </WalletModalProvider>
             </WalletProvider>
